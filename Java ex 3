@@ -1,0 +1,13 @@
+public class BarkingDog {
+    public static void main(String[] args) {
+        shouldWakeUp(true, 1);
+    }
+
+
+    public static boolean shouldWakeUp(boolean isBarking, int hour) {
+        if ((hour >= 0) && (hour < 24) && ((hour < 8) || (hour > 22)) && isBarking) {
+            return true;
+        }
+        return false;
+    }
+}
